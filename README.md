@@ -9,8 +9,8 @@ Created for Android 5.0+ device.<br>
 
 
 **0.1v**<br>
-*-Player controll with health system<br>
-*-Fireball skill<br>
-*-Enemy <br>
-*-Moving ground<br>
-*-Spikes<br>
+*-Player controll with health system*<br>
+*-Fireball skill*<br>
+*-Enemy* <br>
+*-Moving ground*<br>
+*-Spikes*<br>
