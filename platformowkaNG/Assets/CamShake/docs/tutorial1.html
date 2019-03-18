@@ -1,0 +1,35 @@
+<html>
+<body background=bg.jpg>
+<div style="position: absolute;left:50%">
+<div style="position: absolute;width:1024px;left:-512px">
+<font size=10>Tutorial 1 : Advanced parameters</font><br><br>
+Open scene Assets/CamShake/Scene/Tst1<br>
+It has almost the same hierarchy as Tst0, but with some different settings and more reference objects (to make you see the rotation more clearly).<br><br>
+<b>Rotation</b><br>
+1. Set Pos Speed of WHCameraShake of "Offset1" and "Main Camera" to (0,0,0).<br>
+2. Set Rot Speed of WHCameraShake of "Offset1" to (90,0,0).<br>
+3. Set Rot Speed of WHCameraShake of "Main Camera" to (0,180,0).<br>
+<img src=pic1.1_set_rot_speed.png><br>
+4. Run the game. You will find camera shaking in random rotations when you left click on scene.<br>
+5. You also set delay of WHCameraShake in "Main Camera" to 0.05 to see the swirl effect in rotation.<br>
+<br>
+<b>Hooke factor</b><br>
+&nbsp;&nbsp;&nbsp;Hooke is the factor to make the object shaking as if it is attached to a spring.<br>
+&nbsp;&nbsp;&nbsp;The bigger the Hooke factor is, the bigger the force is used to drag the object to its original point.<br>
+&nbsp;&nbsp;&nbsp;If it is unspecified (default to 0), when game starts, it will be set to a reasonable value according to Pos Speed.<br>
+&nbsp;&nbsp;&nbsp;In WHCameraShake, Hooke is used to affect directional shaking and Hooke Rot is used to affect rotational shaking.<br>
+&nbsp;&nbsp;&nbsp;You can adjust the Hooke and Hooke Rot when game is running. e.g. if you change the Hooke Rot of "Main Camera" from (90,0,0) to (900,0,0), you will find the camera shaking more quickly.<br>
+<img src=pic1.2_set_hooke_rot.png><br>
+<br>
+<b>Damping factor</b><br>
+&nbsp;&nbsp;&nbsp;Damping is the factor to make the object shaking with energy lose.<br>
+&nbsp;&nbsp;&nbsp;The less the Damping factor is, (the bigger the lose of energy per iteration), the quicker the shaking will stop.<br>
+&nbsp;&nbsp;&nbsp;In WHCameraShake, Pos Damping is used to affect directional shaking and Rot Damping is used to affect rotational shaking.<br>
+&nbsp;&nbsp;&nbsp;You can adjust the Damping factors when game is running. e.g. if you change the Rot Damping of "Main Camera" from 0.9 to 0.99, you will find the camera shaking might never stop.<br>
+<img src=pic1.3_set_rot_damping.png><br>
+<br>
+<b>That is the end of our tutorial. You can find a more beautiful example in Assets/CamShake/Scene/TstFinal ****</b><br>
+<br>
+</div>
+</div>
+</html>

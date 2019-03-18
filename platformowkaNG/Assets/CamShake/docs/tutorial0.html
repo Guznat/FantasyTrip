@@ -1,0 +1,43 @@
+<html>
+<body background=bg.jpg>
+<div style="position: absolute;left:50%">
+<div style="position: absolute;width:1024px;left:-512px">
+<font size=10>Tutorial 0 : Simple steps to make camshake working</font><br><br>
+<b>First step (create objects)</b><br>
+1. Create an empty scene.<br>
+2. Create an empty GameObject at position (0,0,-10) and name it as "CamRoot".<br>
+3. Create an empty GameObject, drag it to CamRoot, set its relative position to (0,0,0) and rename it to "Offset1".<br>
+4. Drag the "Main Camera" to "Offset1".<br>
+5. Create an cube from menu GameObject->Create Other->Cube at position (0,0,0). This is a reference object to let us know how the camera is shaking.<br>
+<br>
+<b>Second step (attach script and adjust params)</b><br>
+1. Attach WHCameraShake.cs to "Offset1".<br>
+&nbsp;&nbsp;&nbsp;If you want to test the shaking effects now, <font color=green>just play the game in editor, then disable and enable the WHCameraShake component of object "Offset1" in inspector window</font>.<br>
+&nbsp;&nbsp;&nbsp;WHCameraShake has a default vertical shaking config (as you see in the Pos Speed section in the screen shot below).<br>
+&nbsp;&nbsp;&nbsp;So you will see the cube is shaking vertically (actually it is because the "Main Camera" is shaking).<br>
+<img src=pic1_first_try.png><br>
+<br>
+2. Set Pos Speed to (100,100,0), then test again (<font color=green>by disabling and enabling the WHCameraShake component </font>), you will see the camera is shaking in the new direction you just specified. You can set Pos Speed to any value you like when game is running and test to see the new shaking effects.<br>
+<br>
+<b>Third step (random shaking)</b><br>
+1. Attach WHCameraShake.cs to "Main Camera".<br>
+2. Attach WHCameraRandomShaker.cs to "CamRoot".<br>
+3. Attach tst0.cs to "CamRoot".<br>
+<img src=pic2_root_scripts.png><br><br>
+4. Set Pos Speed of WHCameraShake in "Main Camera" to (100,0,0) and set Pos Speed of WHCameraShake in "Offset1" to (0,100,0).<br>
+<img src=pic3_another_shake_script.png><br><br>
+5. Run the game. You will find camera shaking in random directions when you left click on scene.<br>
+&nbsp;&nbsp;&nbsp;This random effects is made by <font color=green>combining 2 one direction (random speed) shaking movements togather</font>.<br>
+<br>
+<b>Fourth step (making a little swirl)</b><br>
+1. Set delay of WHCameraShake in "Main Camera" to 0.05<br>
+<img src=pic4_delay.png><br><br>
+2. Run the game. You will find camera shaking in a random ellipse trail.<br>
+&nbsp;&nbsp;&nbsp;The reason is simple: the delay of 0.05 second makes a moving phase difference.<br>
+<br>
+<b>You can find this sample in Assets/CamShake/Scene/Tst0 ****</b><br>
+<br>
+And more interesting effects in our <a href=tutorial1.html>Next Tutorial</a><br>
+</div>
+</div>
+</html>
