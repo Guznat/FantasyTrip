@@ -7,6 +7,7 @@ public class Enemy : MonoBehaviour
     public Health playerHealth;
     public int health = 100;
     public GameObject deathEffect;
+    public CameraFollow cf;
     // Start is called before the first frame update
     public void TakeDamege(int damage)
     {
@@ -21,6 +22,7 @@ public class Enemy : MonoBehaviour
     {
         Instantiate(deathEffect, transform.position, Quaternion.identity);
         Destroy(gameObject);
+        cf.ShakeCamera();
     }
 
 
@@ -28,9 +30,15 @@ public class Enemy : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            playerHealth.health = playerHealth.health - 1;
+            playerHealth.health = playerHealth.health - 1;        
             Debug.Log("Enemy hit");
 
         }
+    }
+
+
+    void EnemyShoot()
+    {
+
     }
 }

@@ -1,0 +1,102 @@
+{"frames": [
+
+{
+	"filename": "barrel",
+	"frame": {"x":2,"y":2,"w":24,"h":30},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":30},
+	"sourceSize": {"w":24,"h":30},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "crate-stack",
+	"frame": {"x":28,"y":2,"w":73,"h":68},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":73,"h":68},
+	"sourceSize": {"w":73,"h":68},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "crate",
+	"frame": {"x":103,"y":2,"w":39,"h":35},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":39,"h":35},
+	"sourceSize": {"w":39,"h":35},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "house-a",
+	"frame": {"x":144,"y":2,"w":168,"h":183},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":168,"h":183},
+	"sourceSize": {"w":168,"h":183},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "house-b",
+	"frame": {"x":314,"y":2,"w":210,"h":244},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":210,"h":244},
+	"sourceSize": {"w":210,"h":244},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "house-c",
+	"frame": {"x":526,"y":2,"w":221,"h":183},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":221,"h":183},
+	"sourceSize": {"w":221,"h":183},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "sign",
+	"frame": {"x":749,"y":2,"w":37,"h":45},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":37,"h":45},
+	"sourceSize": {"w":37,"h":45},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "street-lamp",
+	"frame": {"x":788,"y":2,"w":35,"h":108},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":35,"h":108},
+	"sourceSize": {"w":35,"h":108},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "wagon",
+	"frame": {"x":825,"y":2,"w":93,"h":75},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":93,"h":75},
+	"sourceSize": {"w":93,"h":75},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "well",
+	"frame": {"x":920,"y":2,"w":65,"h":65},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":65,"h":65},
+	"sourceSize": {"w":65,"h":65},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "atlas-props.png",
+	"format": "RGBA8888",
+	"size": {"w":987,"h":248},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:f7bd7d228ca23ef3f29472c9060b1e89:f79028d2be4e8ad354cff2852cfc66e2:7367abe05465f33555345994fbb3342e$"
+}
+}
