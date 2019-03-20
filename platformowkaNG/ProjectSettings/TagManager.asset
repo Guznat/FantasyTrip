@@ -9,6 +9,7 @@ TagManager:
   - ground
   - moving
   - Spike
+  - Muzyka
   layers:
   - Default
   - TransparentFX
