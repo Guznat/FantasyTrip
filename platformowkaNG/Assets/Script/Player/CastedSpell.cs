@@ -27,6 +27,7 @@ public class CastedSpell : MonoBehaviour
         }
         else
         {
+            FindObjectOfType<AudioManager>().Play("fireball_impact_ground");
             Instantiate(spellGroundInpact, transform.position, transform.rotation);
             Destroy(gameObject);
         }

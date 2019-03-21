@@ -24,5 +24,6 @@ public class MagicBullet : MonoBehaviour
     public void Shoot()
     {
         Instantiate(Spell, firePoint.position, firePoint.rotation);
+        FindObjectOfType<AudioManager>().Play("fireball_cast");
     }
 }

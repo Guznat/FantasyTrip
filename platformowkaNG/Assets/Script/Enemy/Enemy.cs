@@ -8,7 +8,11 @@ public class Enemy : MonoBehaviour
     public int health = 100;
     public GameObject deathEffect;
     public CameraFollow cf;
-    // Start is called before the first frame update
+    
+
+   
+
+
     public void TakeDamege(int damage)
     {
         health -= damage;
@@ -16,13 +20,15 @@ public class Enemy : MonoBehaviour
         if (health <= 0)
         {
             Die();
+       
         }
     }
     void Die()
-    {
+    {   
         Instantiate(deathEffect, transform.position, Quaternion.identity);
         Destroy(gameObject);
         cf.ShakeCamera();
+        FindObjectOfType<AudioManager>().Play("smierc_czaszka");
     }
 
 
