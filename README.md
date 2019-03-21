@@ -18,3 +18,5 @@ Created for Android 5.0+ device.<br>
 -*Menu*<br>
 -*Music*<br>
 -*Settings*<br>
+-*SFX*<br>
+-*duble jump*
