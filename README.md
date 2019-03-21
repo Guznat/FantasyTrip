@@ -14,3 +14,7 @@ Created for Android 5.0+ device.<br>
 *-Enemy* <br>
 *-Moving ground*<br>
 *-Spikes*<br>
+-*Camera shake*<br>
+-*Menu*<br>
+-*Music*<br>
+-*Settings*<br>
