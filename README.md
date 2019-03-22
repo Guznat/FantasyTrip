@@ -19,4 +19,9 @@ Created for Android 5.0+ device.<br>
 -*Music*<br>
 -*Settings*<br>
 -*SFX*<br>
--*duble jump*
+-*duble jump*<br>
+-*pause manu*<br>
+-*ambient*<br>
+-*dialouge stystem*<br>
+-*scene transition*<br>
+-*animals*<br>
