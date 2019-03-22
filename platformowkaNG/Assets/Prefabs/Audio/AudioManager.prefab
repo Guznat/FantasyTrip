@@ -1,0 +1,102 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &365536421845434084
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 365536421845434085}
+  - component: {fileID: 365536421845434086}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &365536421845434085
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365536421845434084}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -27.757532, y: 6.029254, z: -0.047851562}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &365536421845434086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365536421845434084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a747e4faa6f2e2d468171ab3e3ad180c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: smierc_czaszka
+    clip: {fileID: 8300000, guid: b886d66c733ab3747b155114fcfc5931, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    audioMixer: {fileID: 24300002, guid: 71b9c67028afe584ebfa926de828ba3a, type: 2}
+    source: {fileID: 0}
+  - name: fireball_impact_ground
+    clip: {fileID: 8300000, guid: c2039f6ec89b6f346ae3448d62c07237, type: 3}
+    volume: 0.6
+    pitch: 1
+    loop: 0
+    audioMixer: {fileID: 24300002, guid: 71b9c67028afe584ebfa926de828ba3a, type: 2}
+    source: {fileID: 0}
+  - name: fireball_cast
+    clip: {fileID: 8300000, guid: 7b8ae676c414e6e4f92c2a8e3eb18ab5, type: 3}
+    volume: 1
+    pitch: 0.98
+    loop: 0
+    audioMixer: {fileID: 24300002, guid: 71b9c67028afe584ebfa926de828ba3a, type: 2}
+    source: {fileID: 0}
+  - name: 
+    clip: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 1
+    audioMixer: {fileID: 0}
+    source: {fileID: 0}
+  - name: 
+    clip: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 0
+    audioMixer: {fileID: 0}
+    source: {fileID: 0}
+  - name: 
+    clip: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 0
+    audioMixer: {fileID: 0}
+    source: {fileID: 0}
+  - name: ambient
+    clip: {fileID: 8300000, guid: 60f36d2a86cf088468c1c654ceb67689, type: 3}
+    volume: 1
+    pitch: 1.08
+    loop: 1
+    audioMixer: {fileID: 24300002, guid: f5f140f8fd23d23489ebf9e308ce2f8c, type: 2}
+    source: {fileID: 0}
+  - name: theme1
+    clip: {fileID: 8300000, guid: 336a7a50176b0a8439d49d0c5cf92ad8, type: 3}
+    volume: 1
+    pitch: 1.08
+    loop: 1
+    audioMixer: {fileID: 24300002, guid: ffe22d7f04218f247b87070b16db3d88, type: 2}
+    source: {fileID: 0}

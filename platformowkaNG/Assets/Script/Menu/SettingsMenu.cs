@@ -9,6 +9,7 @@ public class SettingsMenu : MonoBehaviour
 {
     public AudioMixer musicAudioMixer;
     public AudioMixer sfxAudioMixer;
+    public AudioMixer ambientAudioMixer;
     public Button backBtn;
 
     private void Start()
@@ -25,8 +26,10 @@ public class SettingsMenu : MonoBehaviour
     {
         sfxAudioMixer.SetFloat("SFXVolume", volume);
     }
-
-
+    public void SetAmbientVolume(float volume)
+    {
+        ambientAudioMixer.SetFloat("ambientVolume", volume);
+    }
     public void SetQuality(int qualityIndex)
     {
         QualitySettings.SetQualityLevel(qualityIndex);
@@ -37,8 +40,4 @@ public class SettingsMenu : MonoBehaviour
         Screen.fullScreen = isFullscreen;
     }
 
-    public void BackToMenu()
-    {
-        SceneManager.LoadScene(0);
-    }
 }

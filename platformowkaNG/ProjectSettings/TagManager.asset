@@ -44,6 +44,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Dialogi
+    uniqueID: 2212776827
+    locked: 0
   - name: trial
     uniqueID: 3025420697
     locked: 0

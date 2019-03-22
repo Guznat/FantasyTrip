@@ -10,7 +10,6 @@ public class fallTeleporter : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         player.transform.position = startArea.position;
-        FindObjectOfType<AudioManager>().Play("tenationsD");
     }
 }
 

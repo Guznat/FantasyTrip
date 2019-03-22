@@ -10,31 +10,41 @@ public class SceneTransitions : MonoBehaviour
     public Button settingsBtn;
     public Button quitBtn;
     public Button extrasBtn;
+    public Button backMenuBtn;
     public Animator transitionAnimation;
+
+    private int levelToLoad;
     void Start()
     {
         playBtn = playBtn.GetComponent<Button>();
         settingsBtn = settingsBtn.GetComponent<Button>();
         quitBtn = quitBtn.GetComponent<Button>();
         extrasBtn = extrasBtn.GetComponent<Button>();
+        backMenuBtn = backMenuBtn.GetComponent<Button>();
     }
 
     public void PlayGame()
     {
-        StartCoroutine(LoadScene());
-        SceneManager.LoadScene(1);
+
+        StartTransitionScene(1);
     }
 
     public void PlaySettings()
     {
-        StartCoroutine(LoadScene());
-        SceneManager.LoadScene(2);
+
+        StartTransitionScene(2);
     }
 
     public void PlayExtras()
     {
-        StartCoroutine(LoadScene());
-        SceneManager.LoadScene(3);
+       
+        StartTransitionScene(3);
+    }
+
+    public void BackMenu()
+    {
+        Time.timeScale = 1f;
+        StartTransitionScene(0); ;
     }
 
     public void Exit()
@@ -43,9 +53,14 @@ public class SceneTransitions : MonoBehaviour
     }
 
 
-    IEnumerator LoadScene()
+    public void StartTransitionScene(int levelIndex)
     {
+        levelToLoad = levelIndex;
         transitionAnimation.SetTrigger("end");
-        yield return new WaitForSeconds(1.5f);
+        
+    }
+    public void EndTransitionScene()
+    {
+        SceneManager.LoadScene(levelToLoad);
     }
 }

@@ -26,6 +26,8 @@ public class PlayerMovment : MonoBehaviour
     public Button  jumpBtn;
 
     public AudioSource bieg;
+    public AudioSource skok;
+    public AudioSource skok2;
 
     private Rigidbody2D rb;
 
@@ -97,9 +99,18 @@ public class PlayerMovment : MonoBehaviour
         }
         if (extraJump > 0)
         {
+            if(extraJump == 2)
+            {
+                skok.Play();
+            }
+            else
+            {
+                skok2.Play();
+            }
+            
             rb.velocity = Vector2.up * jumpForce;
             extraJump--;
-            animator.SetBool("IsJumping", true);
+            animator.SetBool("IsJumping", true);        
         }
     }
 

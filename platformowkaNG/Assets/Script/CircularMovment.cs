@@ -5,10 +5,10 @@ using UnityEngine;
 public class CircularMovment : MonoBehaviour
 {
     [SerializeField]
-    Transform rotationCenter;
+    private Transform rotationCenter;
 
     [SerializeField]
-    float rotationRadius = 2f, Speed = 2f;
+    private float rotationRadius = 2f, Speed = 2f;
 
     float positionX, positionY, angle = 0f;
 
