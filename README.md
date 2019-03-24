@@ -25,3 +25,6 @@ Created for Android 5.0+ device.<br>
 -*dialouge stystem*<br>
 -*scene transition*<br>
 -*animals*<br>
+-*Save/load*<br>
+-*audio-dialog sentence*<br>
+
