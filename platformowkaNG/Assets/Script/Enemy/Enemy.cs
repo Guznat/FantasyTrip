@@ -36,7 +36,7 @@ public class Enemy : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            playerHealth.health = playerHealth.health - 1;        
+            playerHealth.health =- 1;        
             Debug.Log("Enemy hit");
 
         }

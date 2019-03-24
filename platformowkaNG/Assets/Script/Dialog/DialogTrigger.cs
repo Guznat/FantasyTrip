@@ -4,16 +4,29 @@ using UnityEngine;
 
 public class DialogTrigger : MonoBehaviour
 {
-    public Dialog dialog;
+    [SerializeField]
+    private Dialog dialog;
+    public bool DestroyAfterDialog;
 
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        FindObjectOfType<DialogManager>().StartDialog(dialog);
+        if (collision.gameObject.tag == "Player")
+        {
+            FindObjectOfType<DialogManager>().StartDialog(dialog);
+        }
+        
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        Object.Destroy(gameObject);
+        if (collision.gameObject.tag == "Player")
+        {
+            if (DestroyAfterDialog == true)
+            {
+                Object.Destroy(gameObject);
+            }
+        }
+        
     }
 
 }

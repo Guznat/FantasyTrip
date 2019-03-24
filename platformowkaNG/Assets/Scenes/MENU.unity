@@ -2624,6 +2624,7 @@ GameObject:
   - component: {fileID: 3957191460808014350}
   - component: {fileID: 3957191460808014351}
   - component: {fileID: 3957191460808014352}
+  - component: {fileID: 3957191460808014345}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -2631,6 +2632,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &3957191460808014345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3957191460808014344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d627e32c65b810040bf31bb2eaf46980, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 3957191460808014352}
+  health: 5
+  max_health: 5
+  hearts:
+  - {fileID: 2067673866}
+  fullHeart: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
+  emptyHeart: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
 --- !u!61 &3957191460808014349
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2975,6 +2995,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: SceneMenager
       objectReference: {fileID: 0}
+    - target: {fileID: 6011717308761164154, guid: 3690b7f87a82f534ab2447a11f5498ed,
+        type: 3}
+      propertyPath: playBtn
+      value: 
+      objectReference: {fileID: 1332415669}
+    - target: {fileID: 6011717308761164154, guid: 3690b7f87a82f534ab2447a11f5498ed,
+        type: 3}
+      propertyPath: settingsBtn
+      value: 
+      objectReference: {fileID: 2067673868}
+    - target: {fileID: 6011717308761164154, guid: 3690b7f87a82f534ab2447a11f5498ed,
+        type: 3}
+      propertyPath: quitBtn
+      value: 
+      objectReference: {fileID: 1362411734}
+    - target: {fileID: 6011717308761164154, guid: 3690b7f87a82f534ab2447a11f5498ed,
+        type: 3}
+      propertyPath: extrasBtn
+      value: 
+      objectReference: {fileID: 928161246}
+    - target: {fileID: 6011717308761164154, guid: 3690b7f87a82f534ab2447a11f5498ed,
+        type: 3}
+      propertyPath: playerHealth
+      value: 
+      objectReference: {fileID: 3957191460808014345}
     - target: {fileID: 6011717307646957503, guid: 3690b7f87a82f534ab2447a11f5498ed,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3045,26 +3090,6 @@ PrefabInstance:
       propertyPath: m_RenderMode
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6011717308761164154, guid: 3690b7f87a82f534ab2447a11f5498ed,
-        type: 3}
-      propertyPath: playBtn
-      value: 
-      objectReference: {fileID: 1332415669}
-    - target: {fileID: 6011717308761164154, guid: 3690b7f87a82f534ab2447a11f5498ed,
-        type: 3}
-      propertyPath: settingsBtn
-      value: 
-      objectReference: {fileID: 2067673868}
-    - target: {fileID: 6011717308761164154, guid: 3690b7f87a82f534ab2447a11f5498ed,
-        type: 3}
-      propertyPath: quitBtn
-      value: 
-      objectReference: {fileID: 1362411734}
-    - target: {fileID: 6011717308761164154, guid: 3690b7f87a82f534ab2447a11f5498ed,
-        type: 3}
-      propertyPath: extrasBtn
-      value: 
-      objectReference: {fileID: 928161246}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3690b7f87a82f534ab2447a11f5498ed, type: 3}
 --- !u!1001 &7964386295283053204

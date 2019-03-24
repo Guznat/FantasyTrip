@@ -13,4 +13,8 @@ public class AudioTrigger : MonoBehaviour
         FindObjectOfType<AudioManager>().Stop(audioNameToStop);
         FindObjectOfType<AudioManager>().Play(audioNameToStart);
     }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        Object.Destroy(gameObject);
+    }
 }

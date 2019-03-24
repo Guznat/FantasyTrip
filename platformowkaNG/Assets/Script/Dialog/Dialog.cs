@@ -8,4 +8,7 @@ public class Dialog
 {
     [TextArea(1,10)]
     public string[] sentences;
+
+    [TextArea(1, 10)]
+    public string[] audioSentences;
 }

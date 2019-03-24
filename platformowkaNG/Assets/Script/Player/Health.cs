@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class Health : MonoBehaviour
@@ -22,6 +23,7 @@ public class Health : MonoBehaviour
         if (health > max_health)
         {
             health = max_health;
+
         }
 
         for (int i = 0; i < hearts.Length; i++)
@@ -47,7 +49,10 @@ public class Health : MonoBehaviour
             }
         }
 
-
+        if(health <= 0)
+        {
+            Die();
+        }
 
     }
 
@@ -68,5 +73,11 @@ public class Health : MonoBehaviour
     private void OnCollisionExit2D(Collision2D collision)
     {
         animator.SetBool("IsHit", false);
+    }
+
+
+    void Die()
+    {
+        animator.SetBool("IsDead", true);
     }
 }
