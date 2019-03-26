@@ -9,6 +9,7 @@ public class PlayerMovment : MonoBehaviour
     public float runSpeed = 10f;
     public float jumpForce = 10f;
     private int extraJump;
+    private bool jump= false;
     public int jumpAmount;
     private bool facingRight = true;
 
@@ -79,9 +80,11 @@ public class PlayerMovment : MonoBehaviour
         {
             bieg.Stop();
         }
-        
-        
-        
+
+        if (jump == true)
+        {
+            skok.Play();
+        }
     }
 
 
@@ -98,19 +101,11 @@ public class PlayerMovment : MonoBehaviour
             extraJump = jumpAmount;
         }
         if (extraJump > 0)
-        {
-            if(extraJump == 2)
-            {
-                skok.Play();
-            }
-            else
-            {
-                skok2.Play();
-            }
-            
+        {      
             rb.velocity = Vector2.up * jumpForce;
             extraJump--;
-            animator.SetBool("IsJumping", true);        
+            animator.SetBool("IsJumping", true);
+            jump = true;
         }
     }
 
@@ -125,6 +120,7 @@ public class PlayerMovment : MonoBehaviour
 
 
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);
+        jump = false;
 
         if (isGrounded == true)
         {

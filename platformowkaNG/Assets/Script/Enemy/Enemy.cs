@@ -41,10 +41,4 @@ public class Enemy : MonoBehaviour
 
         }
     }
-
-
-    void EnemyShoot()
-    {
-
-    }
 }

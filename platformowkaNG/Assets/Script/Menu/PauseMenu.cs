@@ -39,26 +39,11 @@ public class PauseMenu : MonoBehaviour
     public void SavePlayer()
     {
         SaveSystem.SavePlayer(pm, hl);
+        pauseUIPanel.SetActive(false);
+        Time.timeScale = 1f;
+        pause = false;
 
     }
-
-    public void LoadPlayer()
-    {
-        DataHolder data = SaveSystem.LoadPlayer();
-
-        Vector3 position;
-        position.x = data.position[0];
-        position.y = data.position[1];
-        position.z = data.position[2];
-
-        pm.gameObject.transform.position = position;
-
-
-    }
-
-
-
-
 }
 
 
