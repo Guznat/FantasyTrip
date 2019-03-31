@@ -28,3 +28,4 @@ Created for Android 5.0+ device.<br>
 -*Save/load*<br>
 -*audio-dialog sentence*<br>
 -*mele combat*<br>
+-*new background system*<br>
