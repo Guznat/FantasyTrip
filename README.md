@@ -20,7 +20,7 @@ Created for Android 5.0+ device.<br>
 -*Settings*<br>
 -*SFX*<br>
 -*duble jump*<br>
--*pause manu*<br>
+-*pause menu*<br>
 -*ambient*<br>
 -*dialouge stystem*<br>
 -*scene transition*<br>
