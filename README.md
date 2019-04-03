@@ -29,3 +29,6 @@ Created for Android 5.0+ device.<br>
 -*audio-dialog sentence*<br>
 -*mele combat*<br>
 -*new background system*<br>
+-*enemy mele attack*<br>
+-*enemy spell atack*<br>
+-*Change hit/death effect*<br>
