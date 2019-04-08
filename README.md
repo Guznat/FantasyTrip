@@ -8,7 +8,7 @@ Created for Android 5.0+ device.<br>
 
 
 
-**0.1v**<br>
+**news and changes notes for 0.1v**<br>
 *-Player controll with health system*<br>
 *-Fireball skill*<br>
 *-Enemy* <br>
@@ -20,11 +20,19 @@ Created for Android 5.0+ device.<br>
 -*Settings*<br>
 -*SFX*<br>
 -*duble jump*<br>
--*pause manu*<br>
+-*pause menu*<br>
 -*ambient*<br>
 -*dialouge stystem*<br>
 -*scene transition*<br>
 -*animals*<br>
 -*Save/load*<br>
 -*audio-dialog sentence*<br>
+-*mele combat*<br>
+-*new background system*<br>
+-*enemy mele attack*<br>
+-*enemy spell atack*<br>
+-*Change hit/death effect*<br>
+-*Boss arena*<br>
+-*Change enemy script for faster reaction*<br>
+-*Change audio manager trigger script for faster dialogue loading*<br>
 
