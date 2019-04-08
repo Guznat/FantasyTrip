@@ -1,62 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4622482104780461133
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6203083929834514587}
-  - component: {fileID: 5915013726204371643}
-  m_Layer: 0
-  m_Name: bezpieczne scianki
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &6203083929834514587
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4622482104780461133}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.5806597, y: 0.77072805, z: 0.12458247}
-  m_LocalScale: {x: 7.17072, y: 7.9910507, z: 7.9910507}
-  m_Children: []
-  m_Father: {fileID: 5643010305967623891}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &5915013726204371643
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4622482104780461133}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.04739891, y: -0.04265976}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.4564819, y: 0.15628338}
-  m_EdgeRadius: 0
 --- !u!1 &5643010305967623900
 GameObject:
   m_ObjectHideFlags: 0
@@ -66,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5643010305967623891}
-  - component: {fileID: 5643010305967623890}
   - component: {fileID: 5643010305967623901}
+  - component: {fileID: 4655406327532765201}
   m_Layer: 0
   m_Name: Spike
   m_TagString: Untagged
@@ -88,35 +31,9 @@ Transform:
   m_Children:
   - {fileID: 5643010306234704099}
   - {fileID: 5643010305974106715}
-  - {fileID: 6203083929834514587}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!68 &5643010305967623890
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5643010305967623900}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0.001
-  m_Points:
-  - {x: -1.6273791, y: 1.1093838}
-  - {x: -1.5873873, y: 1.2071366}
-  - {x: -1.5047505, y: 1.3520396}
-  - {x: -1.0904039, y: 1.4665202}
-  - {x: -0.5131224, y: 1.4554051}
-  - {x: -0.094084516, y: 1.4767092}
-  - {x: 0.46285918, y: 1.4448464}
-  - {x: 1.0253147, y: 1.4186422}
-  - {x: 1.1219021, y: 1.1976067}
 --- !u!114 &5643010305967623901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -130,6 +47,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 0}
+  pm: {fileID: 0}
+  cf: {fileID: 0}
+--- !u!61 &4655406327532765201
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5643010305967623900}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.20491278, y: 0.39328736}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.3224318, y: 1.7865745}
+  m_EdgeRadius: 0
 --- !u!1 &5643010305974106714
 GameObject:
   m_ObjectHideFlags: 0

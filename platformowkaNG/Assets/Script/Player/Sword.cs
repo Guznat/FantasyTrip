@@ -10,16 +10,18 @@ public class Sword : MonoBehaviour
     {
         Debug.Log(hitInfo.name);
         Enemy enemy = hitInfo.GetComponent<Enemy>();
+        ShootingEnemy shootingEnemy = hitInfo.GetComponent<ShootingEnemy>();
         if (enemy != null)
         {
             enemy.TakeDamege(damage);
-            FindObjectOfType<AudioManager>().Play("sword");
+            
 
         }
-        else
+        else if(shootingEnemy != null)
         {
-
-            FindObjectOfType<AudioManager>().Play("sword");
+            shootingEnemy.TakeDamege(damage);
+            
         }
+        
     }
 }

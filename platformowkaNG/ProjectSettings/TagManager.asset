@@ -10,6 +10,8 @@ TagManager:
   - moving
   - Spike
   - Muzyka
+  - spell
+  - dialogi
   layers:
   - Default
   - TransparentFX
@@ -23,11 +25,11 @@ TagManager:
   - plansza
   - Background
   - Enemy
-  - 
-  - 
-  - 
-  - 
-  - 
+  - dialog
+  - spell
+  - background
+  - otherignore
+  - music
   - 
   - 
   - 

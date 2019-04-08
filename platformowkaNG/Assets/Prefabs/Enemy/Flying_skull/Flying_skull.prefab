@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4324064615070002126
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4031948378481919443}
+  m_Layer: 0
+  m_Name: firePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4031948378481919443
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4324064615070002126}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.042999983, y: -0.042999983, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5894339233505150449}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5894339233017688183
 GameObject:
   m_ObjectHideFlags: 0
@@ -43,6 +73,7 @@ GameObject:
   - component: {fileID: 5894339233505150455}
   - component: {fileID: 5894339233505150452}
   - component: {fileID: 5722995990663134040}
+  - component: {fileID: 2154533665585425042}
   m_Layer: 11
   m_Name: Flying_skull
   m_TagString: Enemy
@@ -60,7 +91,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 4031948378481919443}
   m_Father: {fileID: 5894339234642448682}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -161,6 +193,23 @@ MonoBehaviour:
   playerHealth: {fileID: 0}
   health: 100
   deathEffect: {fileID: 0}
+  cf: {fileID: 0}
+--- !u!114 &2154533665585425042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5894339233505150453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9558a9ee193fc384babc4bbaea418c6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firePoint: {fileID: 4031948378481919443}
+  spell: {fileID: 8587736843312210534, guid: 0c6d266851a01544e8aa29b2a375753e, type: 3}
+  shotingDistance: 2
+  cooldown: 2
 --- !u!1 &5894339234642448683
 GameObject:
   m_ObjectHideFlags: 0

@@ -265,7 +265,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -317,3 +317,4 @@ MonoBehaviour:
   extrasBtn: {fileID: 0}
   backMenuBtn: {fileID: 6011717307985249055}
   transitionAnimation: {fileID: 6011717308761164158}
+  playerHealth: {fileID: 0}

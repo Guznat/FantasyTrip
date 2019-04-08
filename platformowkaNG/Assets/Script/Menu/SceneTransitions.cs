@@ -13,7 +13,7 @@ public class SceneTransitions : MonoBehaviour
     public Button backMenuBtn;
     public Animator transitionAnimation;
 
-    public Health playerHealth;
+    //public Health playerHealth;
 
     private int levelToLoad;
     void Start()
@@ -24,13 +24,7 @@ public class SceneTransitions : MonoBehaviour
         extrasBtn = extrasBtn.GetComponent<Button>();
         backMenuBtn = backMenuBtn.GetComponent<Button>();
     }
-    private void Update()
-    {
-        if(playerHealth.health <= 0)
-        {
-            StartTransitionScene(4);
-        }
-    }
+   
     public void PlayGame()
     {
 

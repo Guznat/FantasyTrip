@@ -37,15 +37,12 @@ public class AudioManager : MonoBehaviour
         s.source.Play();
     }
 
-    public void Stop(string name)
+    public void Stop()
     {
-        Sound s = Array.Find(sounds, sound => sound.name == name);
-        if (s == null)
+        foreach (Sound s in sounds)
         {
-            Debug.LogWarning("[AudioManager] Nie znaleziono takiego dzwieku: " + s.name);
-            return;
+            s.source.Stop();
         }
-        s.source.Stop();
        
     }
 }

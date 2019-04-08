@@ -9,7 +9,10 @@ public class fallTeleporter : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        player.transform.position = startArea.position;
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            player.transform.position = startArea.position;
+        }
     }
 }
 

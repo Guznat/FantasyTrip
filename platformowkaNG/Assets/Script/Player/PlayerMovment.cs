@@ -84,6 +84,7 @@ public class PlayerMovment : MonoBehaviour
         if (jump == true)
         {
             skok.Play();
+            bieg.Stop();
         }
     }
 
@@ -117,7 +118,10 @@ public class PlayerMovment : MonoBehaviour
 
     void FixedUpdate()
     {
-
+        if(animator.GetBool("IsAttack")== true)
+        {
+            FindObjectOfType<AudioManager>().Play("sword");
+        }
 
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);
         jump = false;
@@ -148,4 +152,28 @@ public class PlayerMovment : MonoBehaviour
 
         transform.Rotate(0f, 180f, 0f);
     }
+
+
+
+    public IEnumerator Knockback(float knockDuration, float knockPowerw, Vector3 knockDirection)
+    {
+        float timer = 0;
+
+        while(knockDuration > timer)
+        {
+            timer += Time.deltaTime;
+
+            rb.AddForce(new Vector3(knockDirection.x * -1, knockDirection.y * knockPowerw, transform.position.z));
+        }
+
+        yield return 0;
+    }
+
+
+    public void ZeroVelocity()
+    {
+        rb.velocity = Vector2.zero;
+        horizontalMove = 0f;
+    }
+
 }

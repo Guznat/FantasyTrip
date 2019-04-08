@@ -52,11 +52,10 @@ public class DialogManager : MonoBehaviour
         }
         string sentence = sentences.Dequeue();
         string audioSentence = audioSentences.Dequeue();
-        StopDialog(audioSentence);
+        PlayDialog(audioSentence);
         StopAllCoroutines();
         StartCoroutine(LivingText(sentence));
-        StopDialog(audioSentence);
-        PlayDialog(audioSentence);
+        
 
     }
     IEnumerator LivingText (string sentence)
@@ -72,10 +71,6 @@ public class DialogManager : MonoBehaviour
     void PlayDialog(string audioSentence)
     {
         FindObjectOfType<AudioManager>().Play(audioSentence);
-    }
-    void StopDialog(string audioSentence)
-    {
-        FindObjectOfType<AudioManager>().Stop(audioSentence);
     }
 
 

@@ -17,7 +17,6 @@ public class Slash : MonoBehaviour
     {
         sword.SetActive(true);
         playerAnim.SetBool("IsAttack", true);
-        
     }
 
      public void EndAttack()

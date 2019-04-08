@@ -16,6 +16,11 @@ public class Health : MonoBehaviour
     public Image[] hearts;
     public Sprite fullHeart;
     public Sprite emptyHeart;
+    public CameraFollow cf;
+    public SceneTransitions st;
+    public GameObject UI;
+    public PlayerMovment pm;
+
 
 
     private void Update()
@@ -51,33 +56,46 @@ public class Health : MonoBehaviour
 
         if(health <= 0)
         {
-            Die();
+            Die();          
         }
+
+
 
     }
 
-
-    private void OnCollisionEnter2D(Collision2D collision)
+    public void Hit()
     {
-        if (collision.gameObject.CompareTag("Enemy"))
-        {
-            animator.SetBool("IsHit", true);
-        }
-        else if (collision.gameObject.CompareTag("Spike"))
-        {
-            animator.SetBool("IsHit", true);
-        }
+        health -= 1;
+        cf.ShakeCamera();
+        animator.SetBool("IsHit", true);
+        FindObjectOfType<AudioManager>().Play("player_hit");
     }
-
-
-    private void OnCollisionExit2D(Collision2D collision)
+    public void HitEnd()
     {
         animator.SetBool("IsHit", false);
     }
 
-
     void Die()
     {
+        animator.SetBool("IsHit", false);
+        animator.SetBool("IsAttack", false);
+        animator.SetBool("IsJumping", false);
+        animator.SetBool("IsShooting", false);
+        animator.SetBool("IsCrouching", false);
         animator.SetBool("IsDead", true);
+        UI.SetActive(false);
+        pm.ZeroVelocity();
     }
+
+    void GameOver()
+    {
+        st.StartTransitionScene(4);
+    }
+
+    void PlaySadSong()
+    {
+        FindObjectOfType<AudioManager>().Play("sad_piano");
+    }
+
+ 
 }

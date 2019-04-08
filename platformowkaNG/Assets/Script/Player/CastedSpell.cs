@@ -19,9 +19,18 @@ public class CastedSpell : MonoBehaviour
     {
         Debug.Log(hitInfo.name);
         Enemy enemy = hitInfo.GetComponent<Enemy>();
+        ShootingEnemy shootingEnemy = hitInfo.GetComponent<ShootingEnemy>();
         if (enemy != null)
         {
+            FindObjectOfType<AudioManager>().Play("fireball_impact_ground");
             enemy.TakeDamege(damage);
+            Instantiate(spellEnemyImpact, transform.position, transform.rotation);
+            Destroy(gameObject);
+        }
+        else if (shootingEnemy != null)
+        {
+            FindObjectOfType<AudioManager>().Play("fireball_impact_ground");
+            shootingEnemy.TakeDamege(damage);
             Instantiate(spellEnemyImpact, transform.position, transform.rotation);
             Destroy(gameObject);
         }

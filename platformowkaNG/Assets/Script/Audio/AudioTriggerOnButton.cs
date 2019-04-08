@@ -10,10 +10,26 @@ public class AudioTriggerOnButton : MonoBehaviour
     public GameObject dialogObject;
     public Button dialogBtn;
     public bool DestroyOnExit;
+    private bool buttonPress = false;
 
 
     void Update()
     {
+        if (buttonPress == true)  
+        {
+            // Ten kawałek kodu był podpiety pod dialogbutton, ale odpalał dialogi z lagiem nawet 5-6sek, 
+            // przeniesienie go do funkcji update rozwiazało sprawe.
+
+            FindObjectOfType<DialogManager>().StartDialog(dialog);
+            if (DestroyOnExit == true)
+            {
+                Object.Destroy(gameObject);
+            }
+            buttonPress = false;
+        }
+
+
+
         dialogBtn.onClick.AddListener(StartDialog);
     }
     private void OnTriggerEnter2D(Collider2D collision)
@@ -35,10 +51,6 @@ public class AudioTriggerOnButton : MonoBehaviour
 
     public void StartDialog()
     {
-        FindObjectOfType<DialogManager>().StartDialog(dialog);
-        if (DestroyOnExit == true)
-        {
-            Object.Destroy(gameObject);
-        }
+        buttonPress = true;
     }
 }

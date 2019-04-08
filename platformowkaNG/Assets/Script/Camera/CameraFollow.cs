@@ -36,7 +36,7 @@ public class CameraFollow : MonoBehaviour
 
     public void ShakeCamera()
     {
-        shakeAmount = 0.02f;
-        shakeTimer = 0.2f;
+        shakeAmount = 0.035f;
+        shakeTimer = 0.35f;
     }
 }
