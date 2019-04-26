@@ -36,3 +36,4 @@ Created for Android 5.0+ device.<br>
 -*Change enemy script for faster reaction*<br>
 -*Change audio manager trigger script for faster dialogue loading*<br>
 -*early boss fight*<br>
+-*reduce player fireball max range*<br>
