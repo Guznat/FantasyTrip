@@ -11,6 +11,7 @@ public class Sword : MonoBehaviour
         Debug.Log(hitInfo.name);
         Enemy enemy = hitInfo.GetComponent<Enemy>();
         ShootingEnemy shootingEnemy = hitInfo.GetComponent<ShootingEnemy>();
+        EnemyGhost enemyGhost = hitInfo.GetComponent<EnemyGhost>();
         if (enemy != null)
         {
             enemy.TakeDamege(damage);
@@ -22,6 +23,11 @@ public class Sword : MonoBehaviour
             shootingEnemy.TakeDamege(damage);
             
         }
-        
+        else if (enemyGhost != null)
+        {
+            enemyGhost.TakeDamege(damage);
+
+        }
+
     }
 }

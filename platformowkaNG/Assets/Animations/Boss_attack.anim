@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Shot_enemy_impact
+  m_Name: Boss_attack
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,11 +20,11 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 21300000, guid: bf0738c316fd26f48935ce62ac4d4a91, type: 3}
-    - time: 0.28333333
-      value: {fileID: 0}
+      value: {fileID: 21300016, guid: ce8a77b21f4e20e42a3ea56240bd083a, type: 3}
+    - time: 0.16666667
+      value: {fileID: 21300018, guid: ce8a77b21f4e20e42a3ea56240bd083a, type: 3}
     - time: 0.33333334
-      value: {fileID: 21300002, guid: 739dc8bb847b6aa40886fd462e683a18, type: 3}
+      value: {fileID: 21300016, guid: ce8a77b21f4e20e42a3ea56240bd083a, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -44,9 +44,9 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 21300000, guid: bf0738c316fd26f48935ce62ac4d4a91, type: 3}
-    - {fileID: 0}
-    - {fileID: 21300002, guid: 739dc8bb847b6aa40886fd462e683a18, type: 3}
+    - {fileID: 21300016, guid: ce8a77b21f4e20e42a3ea56240bd083a, type: 3}
+    - {fileID: 21300018, guid: ce8a77b21f4e20e42a3ea56240bd083a, type: 3}
+    - {fileID: 21300016, guid: ce8a77b21f4e20e42a3ea56240bd083a, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
@@ -57,7 +57,7 @@ AnimationClip:
     m_Level: 0
     m_CycleOffset: 0
     m_HasAdditiveReferencePose: 0
-    m_LoopTime: 0
+    m_LoopTime: 1
     m_LoopBlend: 0
     m_LoopBlendOrientation: 0
     m_LoopBlendPositionY: 0

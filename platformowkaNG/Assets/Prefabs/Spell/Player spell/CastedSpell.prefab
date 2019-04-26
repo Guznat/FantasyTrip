@@ -140,6 +140,7 @@ MonoBehaviour:
     type: 3}
   spellGroundInpact: {fileID: 4782227270724661450, guid: c9df2e32d277f064d95323489b913c0c,
     type: 3}
+  range: 3
 --- !u!95 &9173208542360568929
 Animator:
   serializedVersion: 3
